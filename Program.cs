@@ -18,11 +18,20 @@ namespace C_sharp_3__assignment
             Console.WriteLine(shelfsCopies[1,0]);
 
             #endregion
+            #region Fourth question
+
+            PrintBookTitle("Clean Code");
         }
+
+        static void PrintBookTitle(string title) => Console.WriteLine("Book Title: " + title);
+
+
+            #endregion      
         #region Third question
 
         static void PrintWelcomeMessage() => Console.WriteLine("Welcome to the Library!");
 
         #endregion
+        
     }
 }
