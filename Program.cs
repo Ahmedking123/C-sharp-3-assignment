@@ -19,5 +19,10 @@ namespace C_sharp_3__assignment
 
             #endregion
         }
+        #region Third question
+
+        static void PrintWelcomeMessage() => Console.WriteLine("Welcome to the Library!");
+
+        #endregion
     }
 }
