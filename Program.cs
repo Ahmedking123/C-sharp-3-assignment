@@ -11,6 +11,13 @@ namespace C_sharp_3__assignment
             Console.WriteLine(prices[1]);
 
             #endregion
+
+            #region Second question
+
+            double[,] shelfsCopies = { {3,5 }, {1,4 } };
+            Console.WriteLine(shelfsCopies[1,0]);
+
+            #endregion
         }
     }
 }
