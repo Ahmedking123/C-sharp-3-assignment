@@ -6,16 +6,17 @@ namespace C_sharp_3__assignment
         static void Main(string[] args)
         {
 
-            #region Seventh question
+            #region Eighth question
 
-            int pages = 400;
-            AddBonusPagesByRef(ref pages);
-            Console.WriteLine(pages);
-            // the value of the variable will change since we are passing it by reference
+            double[] prices = { 5.0, 7.5, 10.0, 2.75 };
+            ReplaceArray(ref prices);
+            Console.WriteLine(prices.Length);
         }
-        static void AddBonusPagesByRef(ref int pages) => pages += 50;
+        static void ReplaceArray(ref double[] prices)
+        {
+            prices = new double[] { 10.0, 12.5, 15.0 };
+        }
 
             #endregion
     }
-
 }
