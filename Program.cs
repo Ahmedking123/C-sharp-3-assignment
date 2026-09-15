@@ -5,18 +5,17 @@ namespace C_sharp_3__assignment
     {
         static void Main(string[] args)
         {
-            #region Sixth question
 
-            double[] prices = { 25.5, 40.0 };
-            ApplyDiscount(prices);
-            Console.WriteLine(prices[0]);
+            #region Seventh question
 
-            //the value if the item will change since array is passed by reference
+            int pages = 400;
+            AddBonusPagesByRef(ref pages);
+            Console.WriteLine(pages);
+            // the value of the variable will change since we are passing it by reference
         }
-        static void ApplyDiscount(double[] prices)
-        {
-            prices[0] -= 5;
-        } 
+        static void AddBonusPagesByRef(ref int pages) => pages += 50;
+
             #endregion
     }
+
 }
