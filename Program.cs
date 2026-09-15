@@ -6,17 +6,21 @@ namespace C_sharp_3__assignment
         static void Main(string[] args)
         {
 
-            #region Eighth question
-
-            double[] prices = { 5.0, 7.5, 10.0, 2.75 };
-            ReplaceArray(ref prices);
-            Console.WriteLine(prices.Length);
         }
-        static void ReplaceArray(ref double[] prices)
+        #region Ninth question
+
+        static bool TryToGetPrice(string title, out double price)
         {
-            prices = new double[] { 10.0, 12.5, 15.0 };
+            if (title == "Clean Code")
+            {
+                price = 25.5;
+                return true;
+            }
+
+            price = 0;
+            return false;
         }
 
-            #endregion
+        #endregion
     }
 }
