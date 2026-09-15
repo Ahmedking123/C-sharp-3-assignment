@@ -3,24 +3,16 @@ namespace C_sharp_3__assignment
 {
     internal class Program
     {
+        #region Tenth question
+		
         static void Main(string[] args)
         {
 
+            PrintBookInfo("Clean Code");
+            PrintBookInfo("The Pragmatic Programmer", 450);
         }
-        #region Ninth question
+        static void PrintBookInfo(string title, int pages = 300) => Console.WriteLine($"Title: {title}, Pages: {pages}");
 
-        static bool TryToGetPrice(string title, out double price)
-        {
-            if (title == "Clean Code")
-            {
-                price = 25.5;
-                return true;
-            }
-
-            price = 0;
-            return false;
-        }
-
-        #endregion
+#endregion
     }
 }
