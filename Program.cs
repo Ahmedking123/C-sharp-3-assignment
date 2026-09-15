@@ -5,33 +5,15 @@ namespace C_sharp_3__assignment
     {
         static void Main(string[] args)
         {
-            #region First question
-
-            double[] prices = { 25.5, 40.0, 33.75 };
-            Console.WriteLine(prices[1]);
-
-            #endregion
-
-            #region Second question
-
-            double[,] shelfsCopies = { {3,5 }, {1,4 } };
-            Console.WriteLine(shelfsCopies[1,0]);
-
-            #endregion
-            #region Fourth question
-
-            PrintBookTitle("Clean Code");
+            #region Fifth question
+		
+            int pages = 400;
+            AddBonusPages(pages);
+            Console.WriteLine(pages);
+            // pages value will still the same since we are only passing and modifing a copy of the value
         }
+        static void AddBonusPages(int pages) => pages += 50;
 
-        static void PrintBookTitle(string title) => Console.WriteLine("Book Title: " + title);
-
-
-            #endregion      
-        #region Third question
-
-        static void PrintWelcomeMessage() => Console.WriteLine("Welcome to the Library!");
-
-        #endregion
-        
+#endregion
     }
 }
