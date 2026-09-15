@@ -5,15 +5,18 @@ namespace C_sharp_3__assignment
     {
         static void Main(string[] args)
         {
-            #region Fifth question
-		
-            int pages = 400;
-            AddBonusPages(pages);
-            Console.WriteLine(pages);
-            // pages value will still the same since we are only passing and modifing a copy of the value
-        }
-        static void AddBonusPages(int pages) => pages += 50;
+            #region Sixth question
 
-#endregion
+            double[] prices = { 25.5, 40.0 };
+            ApplyDiscount(prices);
+            Console.WriteLine(prices[0]);
+
+            //the value if the item will change since array is passed by reference
+        }
+        static void ApplyDiscount(double[] prices)
+        {
+            prices[0] -= 5;
+        } 
+            #endregion
     }
 }
